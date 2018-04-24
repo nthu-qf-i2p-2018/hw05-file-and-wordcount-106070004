@@ -55,7 +55,7 @@ def main(filename):
     # BONUS: dump to a pickle file named "wordcount.pkl"
     # hint: dump the Counter object directly
     import pickle
-    f=open(wordcount.pkl','wb')
+    f=open('wordcount.pkl','wb')
     pickle.dump(counter,f)
     f.close()
 
