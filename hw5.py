@@ -43,12 +43,12 @@ def main(filename):
         writer.writerow(['word', 'count'])
         for i in all_words:
             writer.writerow([i,all_words.count(i)])
-            csv_file.close()
+        csv_file.close()
         # write all (word, count) pair into the csv writer
 
     import json
     # dump to a json file named "wordcount.json"
-    with open('wordcount.json','w',newline=' ') as json_file:
+    with open('wordcount.json','w',newline='') as json_file:
         json.dump(counter,json_file)
         json_file.close()
 
