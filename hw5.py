@@ -14,6 +14,7 @@ def main(filename):
     for line in lines:
         # split a line of text into a list words
         # "I have a dream." => ["I", "have", "a", "dream."]
+        
         words = line.split()
 
         # check the format of words and append it to "all_words" list
@@ -22,7 +23,7 @@ def main(filename):
             # "dream." => "dream"
             word = word.strip(string.punctuation)
             # check if word is not empty
-            if word != " ":
+            if word != "":
                 # append the word to "all_words" list
                 all_words.append(word)
                 
